@@ -151,8 +151,8 @@ def game_over():
 
 def add_food():
     if len(food) < AMT_FOOD:
-        x = randint(0, WIDTH/SIZE)
-        y = randint(0, HEIGHT/SIZE)
+        x = randint(0, WIDTH/SIZE - 1)
+        y = randint(0, HEIGHT/SIZE - 1)
 
         food.append(pygame.Rect(x*SIZE, y*SIZE, SIZE, SIZE))
 
