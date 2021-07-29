@@ -39,7 +39,7 @@ def start():
     global dir
     global segs
     global food
-    segs.append(pygame.Rect(WIDTH / 2, HEIGHT / 2, SIZE, SIZE))    
+    segs.append(pygame.Rect(int(WIDTH / SIZE / 2) * SIZE, int(HEIGHT / SIZE / 2) * SIZE, SIZE, SIZE))    
     add_food()
     frames = 0
     run = True
