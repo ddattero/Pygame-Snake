@@ -4,8 +4,8 @@ from time import sleep
 
 pygame.init()
 
-WIDTH = 500
-HEIGHT = 500
+WIDTH = 250
+HEIGHT = 250
 
 #size of each seg
 SIZE = 10
@@ -17,6 +17,8 @@ FOOD_COLOR = (0, 255, 0)
 BG_COLOR = (0, 0, 0)
 
 FPS = 60
+
+FRAMES_TO_MOVE = 10
 
 clock = pygame.time.Clock()
 
@@ -70,7 +72,7 @@ def start():
                     run = False
                     rep = False
         print("")
-        if frames == 10:        
+        if frames == FRAMES_TO_MOVE:        
             frames = 1
             pygame.display.set_caption("Score: " + str(len(segs)))    
             eat()
