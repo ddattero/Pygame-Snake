@@ -10,9 +10,9 @@ HEIGHT = 250
 #size of each seg
 SIZE = 10
 
-SEG_COLOR = (255, 0, 0)
+SEG_COLOR = (0, 255, 0)
 
-FOOD_COLOR = (0, 255, 0)
+FOOD_COLOR = (255, 0, 0)
 
 BG_COLOR = (0, 0, 0)
 
@@ -147,7 +147,7 @@ def game_over():
                 print("seg collision")
                 return True
 
-    if segs[0].x > WIDTH or segs[0].x < 0 or segs[0].y > HEIGHT or segs[0].y < 0:
+    if segs[0].x >= WIDTH or segs[0].x < 0 or segs[0].y >= HEIGHT or segs[0].y < 0:
         print("out of bounds")
         return True
 
